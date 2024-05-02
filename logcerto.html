@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Solicita ao usuário que insira a nota da primeira avaliação
+let nota1 = parseFloat(prompt("Insira a nota da primeira avaliação"));
+
+// Solicita ao usuário que insira a nota da segunda avaliação
+let nota2 = parseFloat(prompt("Insira a nota da segunda avaliação"));
+
+// Verifica se ambas as notas estão dentro de um intervalo de 0 a 10
+if (nota1 >= 0 && nota1 <=10 && nota2 >= 0 && nota2 <= 10)
+{
+    // Calcula a média das duas notas
+    let media = (nota1 + nota2) / 2;
+
+    // Verifica se a média é maior ou igual a 6
+    if (media >= 6)
+    {
+        // Exibe mensagem de aprovação
+        alert("Parabéns! Você passou na disciplina com média " + media.toFixed(2));
+    
+    }
+    else 
+    {
+        // Exibe mensagem de reprovação
+        alert("Infelizmente, você reprovou na disciplina com média " + media.toFixed(2));
+    }
+}
+else
+{
+    // Exibe mensagem de notas inválidas
+    alert("As notas inseridas são inválidas. Certifique-se de que estão dentro do intervalo de 0 a 10.")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
