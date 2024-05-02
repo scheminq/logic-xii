@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var nota1 = parseFloat(prompt("Insira sua primeira nota"));
+    var nota2 = parseFloat(prompt("Insira sua segunda nota"));
+
+    const media = (nota1 + nota2) / 2;
+    if (media >= 6 && media <= 10)
+        {
+            alert("Você está aprovado e sua média é " + media);
+        }
+    else if (media < 6 && media > 0)
+    {
+        alert("Você está reprovado e sua média é " + media);
+    }
+    else 
+    {
+        alert("Nota inválida");
+    }
+</script>
+</body>
+</html>
